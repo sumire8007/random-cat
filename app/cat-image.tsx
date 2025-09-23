@@ -1,7 +1,7 @@
 "use client"; //use clientを指定
 import { useState } from "react";
 import { fetchImage } from "./fetch-image";
-import style from "./page.module.css";
+import styles from "./page.module.css";
 type CatImageProps = {
     url: string;
 };
@@ -18,10 +18,10 @@ export function CatImage({ url }: CatImageProps) {
     };
     //ボタンと画像を表示する
     return (
-        <div className={style.pages}>
-            <button onClick={refreshImage} className={style.button}>他のにゃんこも見る</button>
-            <div className={style.frame}>
-                {imageUrl && <img src={imageUrl} className={ style.img} />}
+        <div className={styles.page}>
+            <button onClick={refreshImage} className={styles.button}>他のにゃんこも見る</button>
+            <div className={styles.frame}>
+                {imageUrl && <img src={imageUrl} className={ styles.img} />}
             </div>
         </div>
     )
