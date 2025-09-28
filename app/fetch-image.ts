@@ -1,7 +1,7 @@
 "use server"
 // 「Image という型は、必ず url という文字列プロパティを持つオブジェクト」と定義
 type Image = {
-    url:string;
+    url: string;
 }
 import { CAT_API_KEY } from "./env";
 //fetchImage がその形のオブジェクトを返すことを約束する
